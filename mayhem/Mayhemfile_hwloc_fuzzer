@@ -1,0 +1,8 @@
+project: hwloc
+target: hwloc_fuzzer
+cmds:
+  - cmd: /mayhem/hwloc_fuzzer
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/hwloc_fuzzer/testsuite
